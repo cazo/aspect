@@ -37,7 +37,7 @@ public class CheckMeOut extends HttpServlet {
 		String aspectType = (String)request.getParameter("aspect");
 		if (aspectType != null && aspectType
 				.equals("behavior")) {
-			response.getWriter().print("passou lendo por aqui...");
+			response.getWriter().print("passou lendo por aqui..." +"["+aspectType+"]");
 		} else {
 			response.getWriter().print("nenhum aspect conhecido...");
 		}
